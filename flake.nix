@@ -15,8 +15,10 @@
     {
       devShells.default = pkgs.mkShell { 
         packages = with pkgs; [
-          python3
+          python3Full
           virtualenv
+          python3Packages.tkinter
+          python3Packages.pydevtool
         ]; 
 
         # buildInputs = with pkgs; [
